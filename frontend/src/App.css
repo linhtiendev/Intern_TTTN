@@ -2,12 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --primary-color: #ff7e01;
-  --secondary-color: #faa935;
-  --heading-color: #0b2727;
-  --text-color: #6e7074;
+  --primary-color: #F67102;
+  --secondary-color: #F67102;
+  --heading-color: #635F85;
+  --text-color: #635F85;
   --font-name: "Montserrat", sans-serif;
-  --subtitle-font-name: "Island Moments", cursive;
+  --subtitle-font-name: 'Poppins', sans-serif;
 }
 
 * {
@@ -45,7 +45,7 @@ ul {
   background: var(--secondary-color) !important;
   border: none !important;
   border-radius: 50px !important;
-  padding: 0.4rem 1.5rem !important;
+  padding: 0.6rem 1.5rem !important;
 }
 
 .primary__btn a {
@@ -59,29 +59,44 @@ ul {
 .secondary__btn {
   background: transparent !important;
   color: #0b2727 !important;
-  border: none !important;
+  /* border: none !important; */
   font-weight: 500 !important;
+  padding: 0.6rem 1.8rem !important;
+  border: 2px solid #E7E7E7 !important;
+  border-radius: 50px !important;
 }
 
 .secondary__btn a {
   text-decoration: none;
-  font-size: 1.1rem;
-  color: var(--heading-color);
+  font-size: 16px;
+  color: var(--primary-color);
 }
 
 .secondary__btn a:hover {
   color: inherit;
 }
 
-.section__subtitle {
-  background: var(--secondary-color);
+
+.section__title {
   font-family: var(--subtitle-font-name);
   width: max-content;
-  padding: 0px 0.5rem;
-  padding-right: 1rem;
-
-  border-radius: 50px;
+  line-height: 19.5px;
   font-weight: 500;
-  font-size: 1.7rem;
-  color: var(--heading-color);
+  font-size: 13px;
+  color: #FF7D01;
+}
+
+.section__contenttitle {
+  font-family: var(--subtitle-font-name);
+  line-height: 56px;
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
+}
+
+.section__subtitle {
+  font-family: var(--subtitle-font-name);
+  font-weight: 500;
+  font-size: 16px;
+  color: #5D677E;
 }

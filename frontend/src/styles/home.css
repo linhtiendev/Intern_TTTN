@@ -1,0 +1,62 @@
+.hero_section {
+    margin-top: 30px;
+}
+.hero__content {
+    margin-top: 20px;
+}
+
+.hero__content h1 {
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero__subtitle-box {
+    margin-top: 4rem;
+}
+
+.hero__content-btn {
+    background: transparent !important;
+    font-weight: 500 !important;
+    padding: 0.1px !important;
+    border: none !important;
+    border-radius: 50px !important;
+    box-shadow: 1px 1px 1px 1px #f3f4f9;
+}
+
+.subtitle_btn-box {
+    margin-top: 10px;
+}
+
+.subtitle_btn-text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.hero__img {
+    /* width: 80%; */
+    position: relative; /* Tạo khối chứa để các ảnh có thể được định vị tương đối */
+}
+
+.hero__img-base {
+    position: relative; /* Đặt ảnh nền cố định trong khối chứa */
+    top: 0;
+    left: 0;
+    width: 80%; /* Đảm bảo ảnh nền chiếm toàn bộ khối chứa */
+    height: 80%; /* Đảm bảo ảnh nền chiếm toàn bộ khối chứa */
+    z-index: 1; /* Đặt ảnh nền dưới ảnh foreground */
+}
+
+.hero__img-markgroup {
+    position: absolute; /* Đặt ảnh foreground cố định trong khối chứa */
+    width: 80%; /* Đảm bảo ảnh nền chiếm toàn bộ khối chứa */
+    height: 120%; /* Đảm bảo ảnh nền chiếm toàn bộ khối chứa */
+    right:110px; /* Điều chỉnh vị trí của ảnh foreground */
+    bottom: -5px;
+    z-index: 2; /* Đặt ảnh foreground trên ảnh nền */
+}
+
+

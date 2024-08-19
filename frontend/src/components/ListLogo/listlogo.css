@@ -1,0 +1,12 @@
+.list__logo-section {
+    background-color: #F4F7FD;
+}
+
+.list__logo-content {
+    justify-content: center;
+}
+
+.list__logo-box {
+    width: 130px;
+    height: 33px;
+}
