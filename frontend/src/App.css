@@ -45,7 +45,7 @@ ul {
   background: var(--secondary-color) !important;
   border: none !important;
   border-radius: 50px !important;
-  padding: 0.6rem 1.5rem !important;
+  padding: 0.9rem 2rem !important;
 }
 
 .primary__btn a {
@@ -61,7 +61,7 @@ ul {
   color: #0b2727 !important;
   /* border: none !important; */
   font-weight: 500 !important;
-  padding: 0.6rem 1.8rem !important;
+  padding: 0.9rem 2rem !important;
   border: 2px solid #E7E7E7 !important;
   border-radius: 50px !important;
 }
@@ -99,4 +99,10 @@ ul {
   font-weight: 500;
   font-size: 16px;
   color: #5D677E;
+}
+
+.hightlight {
+  font-size: 25px;
+  font-weight: 600;
+  color: #F4A11A;
 }

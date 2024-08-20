@@ -1,5 +1,5 @@
 .hero_section {
-    margin-top: 30px;
+    margin-top: 65px;
 }
 .hero__content {
     margin-top: 20px;
@@ -9,6 +9,10 @@
     font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+.hero__subtitle {
+    justify-content: space-between;
 }
 
 .hero__subtitle-box {
@@ -37,26 +41,230 @@
 }
 
 .hero__img {
-    /* width: 80%; */
-    position: relative; /* Tạo khối chứa để các ảnh có thể được định vị tương đối */
+    position: relative;
 }
 
 .hero__img-base {
-    position: relative; /* Đặt ảnh nền cố định trong khối chứa */
+    position: relative; 
     top: 0;
-    left: 0;
-    width: 80%; /* Đảm bảo ảnh nền chiếm toàn bộ khối chứa */
-    height: 80%; /* Đảm bảo ảnh nền chiếm toàn bộ khối chứa */
-    z-index: 1; /* Đặt ảnh nền dưới ảnh foreground */
+    right: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: 1;
 }
 
 .hero__img-markgroup {
-    position: absolute; /* Đặt ảnh foreground cố định trong khối chứa */
-    width: 80%; /* Đảm bảo ảnh nền chiếm toàn bộ khối chứa */
-    height: 120%; /* Đảm bảo ảnh nền chiếm toàn bộ khối chứa */
-    right:110px; /* Điều chỉnh vị trí của ảnh foreground */
+    position: absolute; 
+    width: 100%; 
+    height: 120%; 
+    right: -16px; 
     bottom: -5px;
-    z-index: 2; /* Đặt ảnh foreground trên ảnh nền */
+    z-index: 2; 
 }
 
 
+.service__section {
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.service__section h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* ---- */
+
+.feature__section {
+    margin-top: 65px;
+}
+
+.feature__img {
+    position: relative;
+}
+
+.feature__img-base {
+    position: relative; 
+    top: 0;
+    right: 0;
+    width: 90%; 
+    height: 90%; 
+    z-index: 1;
+}
+
+.feature__img-marketingman {
+    position: absolute; 
+    width: 70%; 
+    height: 110%; 
+    right: 127px; 
+    bottom: 3px;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%); 
+}
+
+.feature__content {
+    margin: 10px 0 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature__content h1 {
+    font-size: 40px;
+}
+
+/* --------- */
+.business_section {
+    margin-top: 65px;
+}
+.business_content-img {
+    margin-top: 120px;
+}
+
+.business__img {
+    position: relative;
+}
+
+.business__img-base {
+    position: relative; 
+    top: 0;
+    right: 0;
+    width: 70%; 
+    height: 70%; 
+    z-index: 1;
+    left: 184px;
+}
+
+.business__img-businessman {
+    position: absolute; 
+    width: 67%; 
+    height: 100%; 
+    right: 8px; 
+    bottom: -2px;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%); 
+}
+
+.business__content {
+    margin: 10px 0 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.business__content h1 {
+    font-size: 40px;
+}
+
+/* --- */
+.testmonials__section {
+    margin-top: 65px;
+}
+
+.testmonials__img {
+    position: relative;
+}
+
+.testmonials__img-base {
+    position: relative; 
+    top: 0;
+    right: 0;
+    width: 80%; 
+    height: 80%; 
+    z-index: 1;
+}
+
+.testmonials__img-content {
+    /* border: 1px solid red; */
+    width: 242px;
+    height: 236px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 1px 1px 1px 1px #f3f4f9;
+}
+
+.testmonials__text {
+    width: max-content;
+}
+.testmonials__name {
+    color: black;
+    font-size: 13px;
+}
+
+.testmonials__subtitle {
+    font-size: 7px;
+}
+
+.testmonials__title {
+    font-size: 10px;
+}
+
+.testmonials__vote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -23px;
+    left: 177px;
+}
+.testmonials__comma {
+    float: right;
+}
+.testmonials__vote img {
+    width: 11px;
+    height: 11px;
+    font-size: 8px;
+}
+.testmonials__vote p {
+    padding: 15px 0px 0px 4px;
+    font-weight: 500;
+
+}
+
+.testmonials__img-mark {
+    position: absolute; 
+    width: 50px; 
+    height: 50px; 
+    bottom: 430px;
+    left: 40px;
+    z-index: 2;
+}
+
+.testmonials__img-pais {
+    position: absolute; 
+    width: 50px; 
+    height: 50px; 
+    bottom: 154px;
+    left: 40px;
+    z-index: 2;
+}
+
+.testmonials__img-alina {
+    position: absolute; 
+    width: 50px; 
+    height: 50px; 
+    bottom: 288px;
+    left: 320px;
+    z-index: 2;
+}
+
+.feature__content {
+    margin: 10px 0 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature__content h1 {
+    font-size: 40px;
+}
+
+.testmonials__feedback-img {
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0px 10px 10px 0px;
+    background-color: #E4ECFF;
+}

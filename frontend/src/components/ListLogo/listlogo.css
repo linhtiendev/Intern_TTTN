@@ -4,9 +4,30 @@
 
 .list__logo-content {
     justify-content: center;
+    gap: 6rem !important;
 }
 
-.list__logo-box {
+.list__logo-google {
+    width: 109.53px;
+    height: 31.37px;
+}
+
+.list__logo-slack {
+    width: 136px;
+    height: 48px;
+}
+
+.list__logo-discord {
+    width: 154px;
+    height: 39px;
+}
+
+.list__logo-riotinto {
+    width: 141px;
+    height: 30px;
+}
+
+.list__logo-heroku {
     width: 130px;
     height: 33px;
 }
