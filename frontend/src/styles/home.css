@@ -116,6 +116,8 @@
 /* --------- */
 .business_section {
     margin-top: 65px;
+    padding: 100px 0px;
+    background-color:#F4F8FD;
 }
 .business_content-img {
     margin-top: 120px;
@@ -249,14 +251,14 @@
     z-index: 2;
 }
 
-.feature__content {
-    margin: 10px 0 0 80px;
+.testmonials__content {
+    margin: 10px 0 0 200px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.feature__content h1 {
+.testmonials__content h1 {
     font-size: 40px;
 }
 
@@ -267,4 +269,47 @@
     border-radius: 10px;
     margin: 0px 10px 10px 0px;
     background-color: #E4ECFF;
+}
+
+/* -- */
+.blog__card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog__card-container .col-lg-4 {
+    flex-basis: 30%;
+}
+
+.blog__card-box {
+    margin: 60px 0px;
+    width: 354px;
+    height: 483px;
+    cursor: pointer;
+    
+}
+.blog__card-box:hover {
+    box-shadow: 1px 1px 1px 1px #f3f4f9;
+    border-radius: 17px;
+    transition: 0.5s;
+}
+
+.blog__card-title {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.blog__card-title:hover{
+    color: #F58C11;
+    transition: 0.5s;
+}
+
+.blog__card-subtitle {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
 }

@@ -13,6 +13,9 @@ import alinaImg from "../assets/images/alina.png";
 import starImg from "../assets/images/star.png";
 import doubleComma from "../assets/images/doublecomma.png";
 import circleCheckImg from "../assets/images/circlecheck.png";
+import rectangleFirstImg from "../assets/images/rectangle1.png";
+import rectangleSecondImg from "../assets/images/rectangle2.png";
+import rectangleThird from "../assets/images/rectangle3.png";
 
 import { Container, Row, Col, Button } from "reactstrap";
 import Title from "../shared/Title";
@@ -20,6 +23,7 @@ import { Link } from "react-router-dom";
 
 import ListLogo from "../components/ListLogo/ListLogo";
 import ServiceList from "../services/ServiceList";
+import Newletter from "../components/newletter/Newletter";
 
 const Home = () => {
     return (
@@ -321,7 +325,7 @@ const Home = () => {
                             </div>
                         </Col>
                         <Col lg="6">
-                            <div className="feature__content">
+                            <div className="testmonials__content">
                                 <div className="hero__subtitle">
                                     <Title title={"TESTMONIALS"} />
                                 </div>
@@ -341,7 +345,9 @@ const Home = () => {
                                             src={circleCheckImg}
                                             alt=""
                                         />
-                                        <span className="hightlight">450+</span>
+                                        <span className="hightlight">
+                                            450+{" "}
+                                        </span>
                                         <span className="section__subtitle">
                                             Client's Feedback
                                         </span>
@@ -358,6 +364,101 @@ const Home = () => {
                 </Container>
             </section>
             {/* == testmonials section end ==*/}
+
+            {/* == blog section start ==*/}
+            <section>
+                <Container>
+                    <Row>
+                        <Col lg="12">
+                            <div className="blog__content-text d-flex flex-column text-center">
+                                <h1 className="section__contenttitle">
+                                    Our Regular Updated
+                                    <br /> Blog Posts
+                                </h1>
+                                <p className="section__subtitle mt-4">
+                                    tempus, lectus risus In' perdiel tellus, sed
+                                    faucibus ipsum ipsurn nun neque.{" "}
+                                </p>
+                            </div>
+                        </Col>
+                        <Row className="blog__card-container gx-4">
+                            <Col lg="4" md="6" sm="12">
+                                <div className="blog__card-box">
+                                    <div className="blog__card-img">
+                                        <img src={rectangleFirstImg} alt="" />
+                                    </div>
+                                    <div className="blog__card-content p-3 mt-3">
+                                        <a
+                                            href="/"
+                                            className="blog__card-title"
+                                        >
+                                            SEO tips and tricks for new
+                                        </a>
+                                        <p className="blog__card-subtitle">
+                                            Curapitur eleifenc erat id
+                                            ullarncorper porta,
+                                            <br /> eras turpis tun pus just!, a
+                                            porititar ju-to ode
+                                            <br /> id oros. Proin lloborti*
+                                        </p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col lg="4" md="6" sm="12">
+                                <div className="blog__card-box">
+                                    <div className="blog__card-img">
+                                        <img src={rectangleSecondImg} alt="" />
+                                    </div>
+                                    <div className="blog__card-content p-3 mt-3">
+                                        <a
+                                            href="/"
+                                            className="blog__card-title"
+                                        >
+                                            A Guide to Google SEO
+                                        </a>
+                                        <p className="blog__card-subtitle">
+                                            Curapitur eleifenc erat id
+                                            ullarncorper porta,
+                                            <br /> eras turpis tun pus just!, a
+                                            porititar ju-to ode
+                                            <br /> id oros. Proin lloborti*
+                                        </p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col lg="4" md="6" sm="12">
+                                <div className="blog__card-box">
+                                    <div className="blog__card-img">
+                                        <img src={rectangleThird} alt="" />
+                                    </div>
+                                    <div className="blog__card-content p-3 mt-3">
+                                        <a
+                                            href="/"
+                                            className="blog__card-title"
+                                        >
+                                            Best Practices SEO Content
+                                        </a>
+                                        <p className="blog__card-subtitle">
+                                            Curapitur eleifenc erat id
+                                            ullarncorper porta,
+                                            <br /> eras turpis tun pus just!, a
+                                            porititar ju-to ode
+                                            <br /> id oros. Proin lloborti*
+                                        </p>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Row>
+                </Container>
+            </section>
+            {/* == blog section end ==*/}
+            <section>
+                <Container>
+                    <Newletter />
+                </Container>
+            </section>
+            {/* == newsletter section start ==*/}
         </>
     );
 };
