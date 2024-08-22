@@ -557,12 +557,9 @@ const Home = () => {
                                             />
                                         </div>
                                         <div className="blog__card-content p-3 mt-3">
-                                            <a
-                                                href="/"
-                                                className="blog__card-title"
-                                            >
+                                            <h2 className="blog__card-title">
                                                 SEO tips and tricks for new
-                                            </a>
+                                            </h2>
                                             <p className="blog__card-subtitle">
                                                 Curapitur eleifenc erat id
                                                 ullarncorper porta,
@@ -582,12 +579,9 @@ const Home = () => {
                                             />
                                         </div>
                                         <div className="blog__card-content p-3 mt-3">
-                                            <a
-                                                href="/"
-                                                className="blog__card-title"
-                                            >
+                                            <h2 className="blog__card-title">
                                                 A Guide to Google SEO
-                                            </a>
+                                            </h2>
                                             <p className="blog__card-subtitle">
                                                 Curapitur eleifenc erat id
                                                 ullarncorper porta,
@@ -604,12 +598,9 @@ const Home = () => {
                                             <img src={rectangleThird} alt="" />
                                         </div>
                                         <div className="blog__card-content p-3 mt-3">
-                                            <a
-                                                href="/"
-                                                className="blog__card-title"
-                                            >
+                                            <h2 className="blog__card-title">
                                                 Best Practices SEO Content
-                                            </a>
+                                            </h2>
                                             <p className="blog__card-subtitle">
                                                 Curapitur eleifenc erat id
                                                 ullarncorper porta,
