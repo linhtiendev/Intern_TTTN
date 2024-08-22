@@ -25,21 +25,27 @@
 .nav__item a::after {
     content: '';
     position: absolute;
-    bottom: -2px; /* Đặt đường gạch chân ngay dưới văn bản */
+    bottom: -2px;
     left: 0;
     width: 0;
-    height: 2px; /* Độ dày của đường gạch chân */
+    height: 2px; 
     color: var(--primary-color);
-    background-color: var(--primary-color); /* Màu sắc của đường gạch chân */
-    transition: width 0.3s ease; /* Hiệu ứng chuyển động khi hover */
+    background-color: var(--primary-color); 
+    transition: width 0.3s ease; 
 }
 
 .nav__item a:hover {
-  color: var(--primary-color); /* Đổi màu chữ thành màu cam khi hover */
+  color: var(--primary-color);
 }
 
 .nav__item a:hover::after {
-  width: 50%; /* Độ dài của gạch chân là 50% chiều dài văn bản */
+  width: 50%; 
+}
+
+.mobile__menu {
+    font-size: 1.3rem;
+    color: var(--heading-color);
+    display: none;
 }
 
 /* header sticky */

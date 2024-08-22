@@ -29,6 +29,8 @@ const nav__link = [
 ];
 
 const Header = () => {
+    // const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+
     return (
         <header className="header sticky__header">
             <Container>
@@ -45,7 +47,14 @@ const Header = () => {
                             <ul className="menu d-flex align-items-center gap-5">
                                 {nav__link.map((item, index) => (
                                     <li className="nav__item" key={index}>
-                                        <NavLink to={item.path}>
+                                        <NavLink
+                                            to={item.path}
+                                            className={(navClass) =>
+                                                navClass.isActive
+                                                    ? "active__link"
+                                                    : ""
+                                            }
+                                        >
                                             {item.display}
                                         </NavLink>
                                     </li>
@@ -64,6 +73,10 @@ const Header = () => {
                                     <Link to="/signup">Sign Up</Link>
                                 </Button>
                             </div>
+
+                            <span className="mobile__menu">
+                                <i className="ri-menu-line"></i>
+                            </span>
                         </div>
                         {/* == nav right end ==  */}
                     </div>
