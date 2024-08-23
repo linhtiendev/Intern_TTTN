@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Container, Row, Button } from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
 
@@ -29,10 +29,31 @@ const nav__link = [
 ];
 
 const Header = () => {
-    // const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+    const headerRef = useRef(null);
+    const menuRef = useRef(null);
+
+    const stickyHeaderFunc = () => {
+        window.addEventListener("scroll", () => {
+            if (
+                document.body.scrollTop > 80 ||
+                document.documentElement.scrollTop > 80
+            ) {
+                headerRef.current.classList.add("sticky__header");
+            } else {
+                headerRef.current.classList.remove("sticky__header");
+            }
+        });
+    };
+
+    useEffect(() => {
+        stickyHeaderFunc();
+
+        return window.removeEventListener("scroll", stickyHeaderFunc);
+    });
+    const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
 
     return (
-        <header className="header sticky__header">
+        <header className="header sticky__header" ref={headerRef}>
             <Container>
                 <Row>
                     <div className="nav__wrapper d-flex align-items-center justify-content-between">
@@ -43,7 +64,11 @@ const Header = () => {
                         {/* == logo end== */}
 
                         {/* == menu start == */}
-                        <div className="navigation">
+                        <div
+                            className="navigation"
+                            ref={menuRef}
+                            onClick={toggleMenu}
+                        >
                             <ul className="menu d-flex align-items-center gap-5">
                                 {nav__link.map((item, index) => (
                                     <li className="nav__item" key={index}>
@@ -74,7 +99,7 @@ const Header = () => {
                                 </Button>
                             </div>
 
-                            <span className="mobile__menu">
+                            <span className="mobile__menu" onClick={toggleMenu}>
                                 <i className="ri-menu-line"></i>
                             </span>
                         </div>
