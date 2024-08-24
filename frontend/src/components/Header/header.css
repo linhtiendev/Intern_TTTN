@@ -63,7 +63,7 @@
 /* === responsive =====  */
 @media only screen and (max-width: 992px){
     .logo img {
-        width: 70px;
+        width: 100px;
         height: 20px;
         border-radius: 15px;
     }
@@ -102,7 +102,7 @@
 
  @media only screen and (max-width: 768px) {
     .logo img {
-        width: 68px;
+        width: 80px;
         height: 18px;
         border-radius: 15px;
     }
