@@ -81,8 +81,8 @@ ul {
   font-family: var(--subtitle-font-name);
   width: max-content;
   line-height: 19.5px;
-  font-weight: 500;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 17px;
   color: #FF7D01;
 }
 
@@ -93,6 +93,15 @@ ul {
   font-size: 50px;
   color: black;
 }
+
+.section__contenttitle2 {
+  font-family: var(--subtitle-font-name);
+  line-height: 46px;
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+}
+
 
 .section__subtitle {
   font-family: var(--subtitle-font-name);
@@ -105,4 +114,94 @@ ul {
   font-size: 25px;
   font-weight: 600;
   color: #F4A11A;
+}
+
+@media only screen and (max-width: 1196px){
+  .section__contenttitle {
+    line-height: 40px;
+    font-size: 40px;
+  }
+  .section__subtitle {
+    font-size: 14px;
+  }
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 1rem;
+  }
+  .primary__btn,
+  .secondary__btn,
+  .btn-dark {
+    padding: 0.6rem 1.4rem !important;
+  }
+
+}
+
+@media only screen and (max-width: 992px){
+  .primary__btn {
+    padding: 0.7rem 1rem !important;
+  }
+  section {
+    padding: 40px 0;
+  }
+  .section__contenttitle {
+    line-height: 36px;
+    font-size: 35px;
+  }
+  .section__contenttitle2 {
+    line-height: 36px;
+    font-size: 30px;
+
+  }
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 0.9rem;
+  }
+  .primary__btn,
+  .secondary__btn,
+  .btn-dark {
+    padding: 0.5rem 1.3rem !important;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  section {
+    padding: 30px 0;
+  }
+  .section__contenttitle {
+    line-height: 36px;
+    font-size: 35px;
+  }
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 0.7rem;
+  }
+  .primary__btn,
+  .secondary__btn,
+  .btn-dark {
+    padding: 0.2rem 0.9rem !important;
+  }
+  
+}
+
+@media only screen and (max-width: 576px){
+  .section__contenttitle {
+    line-height: 36px;
+    font-size: 35px;
+  }
+  .section__contenttitle2 {
+    line-height: 26px;
+    font-size: 26px;
+  }
+  .section__subtitle {
+    font-size: 12px;
+  }
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 0.7rem;
+  }
+  .primary__btn,
+  .secondary__btn,
+  .btn-dark {
+    padding: 0.2rem 0.9rem !important;
+  }
 }
