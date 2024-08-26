@@ -1,5 +1,6 @@
 .list__logo-section {
     background-color: #F4F7FD;
+    width: 100%;
 }
 
 .list__logo-content {
@@ -31,3 +32,70 @@
     width: 130px;
     height: 33px;
 }
+
+@media only screen and (max-width: 1196px){
+    .list__logo-content {
+        gap: 3rem !important;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .list__logo-content {
+        gap: 2rem !important;
+    }
+
+    .list__logo-google {
+        width: 86.53px;
+        height: 20.37px;
+    }
+
+    .list__logo-slack {
+        width: 96px;
+        height: 31px;
+    }
+
+    .list__logo-discord {
+        width: 110px;
+        height: 21px;
+    }
+
+    .list__logo-riotinto {
+        width: 108px;
+        height: 24px;
+    }
+
+    .list__logo-heroku {
+        width: 96px;
+        height: 26px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .list__logo-content {
+        gap: 1rem !important;
+    }
+    .list__logo-google {
+        width: 69.53px;
+        height: 15.37px;
+    }
+
+    .list__logo-slack {
+        width: 60px;
+        height: 20px;
+    }
+
+    .list__logo-discord {
+        width: 74px;
+        height: 22px;
+    }
+
+    .list__logo-riotinto {
+        width: 80px;
+        height: 15px;
+    }
+
+    .list__logo-heroku {
+        width: 80px;
+        height: 22px;
+    }
+ }
