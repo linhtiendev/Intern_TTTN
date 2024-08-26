@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <>
             {/* == hero section start == */}
-            <section className="hero_section">
+            <section>
                 <Container>
                     <Row>
                         <Col lg="6">
@@ -43,203 +43,28 @@ const Home = () => {
                                     marketing and promotions.
                                 </p>
                                 <div className="hero__subtitle-box">
-                                    <Row>
-                                        <Col lg="4">
+                                    <div className="d-flex gap-5">
+                                        <span>
                                             <Button className="btn primary__btn subtitle_btn-box">
                                                 <Link to="/">Get Started</Link>
                                             </Button>
-                                        </Col>
-                                        <Col lg="2">
+                                        </span>
+                                        <span>
                                             <Button className="btn hero__content-btn">
                                                 <img
                                                     src={videoButtonImg}
                                                     alt=""
                                                 />
                                             </Button>
-                                        </Col>
-                                        <Col lg="6">
-                                            <div className="subtitle_btn-text">
-                                                Watch Video
-                                            </div>
-                                        </Col>
-                                    </Row>
+                                        </span>
+                                        <span className="subtitle_btn-text">
+                                            Watch Video
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </Col>
                         <Col lg="6">
-                            {/* <div className="hero__content-img">
-                                <div className="hero__img">
-                                    <img
-                                        className="hero__img-base"
-                                        src={baseImg}
-                                        alt=""
-                                    />
-                                    <img
-                                        className="hero__img-ellipse1"
-                                        src={ellipse}
-                                        alt=""
-                                    />
-                                    <img
-                                        className="hero__img-ellipse2"
-                                        src={ellipse}
-                                        alt=""
-                                    />
-                                    <img
-                                        className="hero__img-ellipse3"
-                                        src={ellipse}
-                                        alt=""
-                                    />
-                                    <img
-                                        className="hero__img-ellipse4"
-                                        src={ellipse}
-                                        alt=""
-                                    />
-                                    <div className="hero__img-twitter">
-                                        <img
-                                            className="img__twitter"
-                                            src={heroTwitter}
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div className="hero__img-instagram">
-                                        <img
-                                            className="img__instagram-light"
-                                            src={instagramLogoLight}
-                                            alt=""
-                                        />
-                                        <img
-                                            className="img__instagram"
-                                            src={instagramLogo}
-                                            alt=""
-                                        />
-                                    </div>
-
-                                    <img
-                                        className="hero__img-markgroup"
-                                        src={maskGroupImg}
-                                        alt=""
-                                    />
-                                    <div className="hero__img-abstract1">
-                                        <div className="abstract__wrapper">
-                                            <div className="abstract__container">
-                                                <img
-                                                    className="abstract__feedback-img"
-                                                    src={circleCheckOrangeImg}
-                                                    alt=""
-                                                />
-                                                <div className="bars">
-                                                    <div className="bar1 orange"></div>
-                                                    <div className="bar2 purple"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="hero__img-abstract2">
-                                        <div className="abstract__wrapper">
-                                            <div className="abstract__container">
-                                                <img
-                                                    className="abstract__feedback-img"
-                                                    src={circleCheckOrangeImg}
-                                                    alt=""
-                                                />
-                                                <div className="bars">
-                                                    <div className="bar1 orange"></div>
-                                                    <div className="bar2 purple"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="hero__img-abstract3">
-                                        <div className="abstract__wrapper">
-                                            <div className="abstract__container">
-                                                <img
-                                                    className="abstract__feedback-img"
-                                                    src={circleCheckOrangeImg}
-                                                    alt=""
-                                                />
-                                                <div className="bars">
-                                                    <div className="bar1 orange"></div>
-                                                    <div className="bar2 purple"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="hero__img-cardpopular">
-                                        <div className="cardpopular__container">
-                                            <p>Our Popular Business</p>
-                                            <div className="cardpopular__box">
-                                                <div className="cardpopular__img">
-                                                    <img
-                                                        className="cardpopular__img-user1"
-                                                        src={popularUser1}
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div>
-                                                    <img
-                                                        className="cardpopular__img-user2"
-                                                        src={popularUser2}
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div>
-                                                    <img
-                                                        className="cardpopular__img-user3"
-                                                        src={popularUser3}
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div>
-                                                    <span className="cardpopular__img-usertext">
-                                                        100+
-                                                    </span>
-                                                    <img
-                                                        className="cardpopular__img-user4"
-                                                        src={ellipseBlueImg}
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div>
-                                                    <img
-                                                        className="cardpopular__img-user5"
-                                                        src={curlStickImg}
-                                                        alt=""
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="hero__img-project">
-                                        <div className="hero__project-container">
-                                            <Row>
-                                                <Col
-                                                    className="d-flex justify-content-center align-items-center"
-                                                    lg="6"
-                                                >
-                                                    <div className="project__img-bg">
-                                                        <img
-                                                            className="project__img"
-                                                            src={projectImg}
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                </Col>
-                                                <Col
-                                                    className="project__img-text"
-                                                    lg="6"
-                                                >
-                                                    <div className="mt-2">
-                                                        <h4>4689</h4>
-                                                        <p>Project Done</p>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> */}
                             <div className="hero__content-img">
                                 <img src={contentImg} alt="" />
                             </div>
@@ -258,7 +83,7 @@ const Home = () => {
                         <Col lg="12">
                             <div className="service__section d-flex justify-content-center align-items-center">
                                 <Title title={"WHAT WE DO"} />
-                                <h1 className="section__contenttitle text-center">
+                                <h1 className="section__contenttitle2 text-center mb-3">
                                     Grow Your Business <br /> With Ringo
                                 </h1>
                                 <p className="section__subtitle">
@@ -274,34 +99,18 @@ const Home = () => {
             {/* == service section end ==*/}
 
             {/* == feature section start ==*/}
-            <section className="feature__section">
+            <section>
                 <Container>
                     <Row>
                         <Col lg="6">
                             <div className="marketing__img">
                                 <img src={marketingImg} alt="" />
                             </div>
-                            {/* <div className="feature__content-img">
-                                <div className="feature__img">
-                                    <img
-                                        className="feature__img-base"
-                                        src={baseImg}
-                                        alt=""
-                                    />
-                                    <img
-                                        className="feature__img-marketingman"
-                                        src={marketingManImg}
-                                        alt=""
-                                    />
-                                </div>
-                            </div> */}
                         </Col>
                         <Col lg="6">
                             <div className="feature__content">
-                                <div className="hero__subtitle">
-                                    <Title title={"WHO WE ARE"} />
-                                </div>
-                                <h1 className="section__contenttitle">
+                                <Title title={"WHO WE ARE"} />
+                                <h1 className="section__contenttitle2">
                                     Top #1 Marketing
                                     <br /> Agency in the World
                                 </h1>
@@ -332,10 +141,9 @@ const Home = () => {
                     <Row>
                         <Col lg="6">
                             <div className="business__content">
-                                <div className="hero__subtitle d-flex align-items-center">
-                                    <Title title={"OUR MISSION & GOAL"} />
-                                </div>
-                                <h1 className="section__contenttitle">
+                                {/* <div className="d-flex align-items-center"></div> */}
+                                <Title title={"OUR MISSION & GOAL"} />
+                                <h1 className="section__contenttitle2">
                                     Realize Your Business
                                     <br /> Goals For Profit
                                 </h1>
@@ -357,20 +165,6 @@ const Home = () => {
                             </div>
                         </Col>
                         <Col lg="6">
-                            {/* <div className="business_content-img">
-                                <div className="business__img">
-                                    <img
-                                        className="business__img-base"
-                                        src={baseImg}
-                                        alt=""
-                                    />
-                                    <img
-                                        className="business__img-businessman"
-                                        src={businessManImg}
-                                        alt=""
-                                    />
-                                </div>
-                            </div> */}
                             <div className="business_img">
                                 <img src={businessImg} alt="" />
                             </div>
@@ -381,120 +175,18 @@ const Home = () => {
             {/* == business section end ==*/}
 
             {/* == testmonials section start ==*/}
-            <section className="testmonials__section">
+            <section>
                 <Container>
                     <Row>
                         <Col lg="6">
-                            {/* <div className="testmonials__content-img">
-                                <div className="testmonials__img">
-                                    <img
-                                        className="testmonials__img-base"
-                                        src={backkgroundImg}
-                                        alt=""
-                                    />
-
-                                    <div className="testmonials__img-mark">
-                                        <div className="testmonials__img-content">
-                                            <div className="testmonials__img">
-                                                <img src={markImg} alt="" />
-                                            </div>
-                                            <div className="testmonials__text">
-                                                <h5 className="testmonials__name">
-                                                    Mark Parker
-                                                </h5>
-                                                <p className="testmonials__subtitle">
-                                                    CEO of Fiverr
-                                                </p>
-                                                <p className="testmonials__title">
-                                                    Cura bitur susci pit nequeut
-                                                    lacus
-                                                    <br /> interd sit amet
-                                                    dictum nunc eleifend
-                                                    <br />. Mauris pulvinar odio
-                                                    at nunc labortis.
-                                                </p>
-                                            </div>
-                                            <div className="testmonials__vote">
-                                                <img src={starImg} alt="" />
-                                                <p>4.5</p>
-                                            </div>
-                                            <div className="testmonials__comma">
-                                                <img src={doubleComma} alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="testmonials__img-pais">
-                                        <div className="testmonials__img-content">
-                                            <div className="testmonials__img">
-                                                <img src={PaisImg} alt="" />
-                                            </div>
-                                            <div className="testmonials__text">
-                                                <h5 className="testmonials__name">
-                                                    Pais Gold
-                                                </h5>
-                                                <p className="testmonials__subtitle">
-                                                    CEO of Fiverr
-                                                </p>
-                                                <p className="testmonials__title">
-                                                    Cura bitur susci pit nequeut
-                                                    lacus
-                                                    <br /> interd sit amet
-                                                    dictum nunc eleifend
-                                                    <br />. Mauris pulvinar odio
-                                                    at nunc labortis.
-                                                </p>
-                                            </div>
-                                            <div className="testmonials__vote">
-                                                <img src={starImg} alt="" />
-                                                <p>4.5</p>
-                                            </div>
-                                            <div className="testmonials__comma">
-                                                <img src={doubleComma} alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="testmonials__img-alina">
-                                        <div className="testmonials__img-content">
-                                            <div className="testmonials__img">
-                                                <img src={alinaImg} alt="" />
-                                            </div>
-                                            <div className="testmonials__text">
-                                                <h5 className="testmonials__name">
-                                                    Alina doly
-                                                </h5>
-                                                <p className="testmonials__subtitle">
-                                                    CEO of Fiverr
-                                                </p>
-                                                <p className="testmonials__title">
-                                                    Cura bitur susci pit nequeut
-                                                    lacus
-                                                    <br /> interd sit amet
-                                                    dictum nunc eleifend
-                                                    <br />. Mauris pulvinar odio
-                                                    at nunc labortis.
-                                                </p>
-                                            </div>
-                                            <div className="testmonials__vote">
-                                                <img src={starImg} alt="" />
-                                                <p>4.5</p>
-                                            </div>
-                                            <div className="testmonials__comma">
-                                                <img src={doubleComma} alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> */}
                             <div className="feedback__img">
                                 <img src={feedbackImg} alt="" />
                             </div>
                         </Col>
                         <Col lg="6">
                             <div className="testmonials__content">
-                                <div className="hero__subtitle">
-                                    <Title title={"TESTMONIALS"} />
-                                </div>
-                                <h1 className="section__contenttitle">
+                                <Title title={"TESTMONIALS"} />
+                                <h1 className="section__contenttitle2">
                                     Client’s Fedback
                                 </h1>
                                 <p className="section__subtitle">
@@ -547,7 +239,7 @@ const Home = () => {
                             </div>
                         </Col>
                         <div className="d-flex justify-content-center">
-                            <Row className="blog__card-container d-flex justify-content-between gap-2">
+                            <Row className="blog__card-container">
                                 <Col lg="4" md="6" sm="12">
                                     <a href="/" className="blog__card-box">
                                         <div className="blog__card-img">
