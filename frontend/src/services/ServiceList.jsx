@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./servicelist.css";
+
 import { Col } from "reactstrap";
 
 import ServiceCard from "./ServiceCard";
@@ -28,13 +30,13 @@ const servicesData = [
 
 const ServiceList = () => {
     return (
-        <>
+        <div className="service_container">
             {servicesData.map((item, index) => (
-                <Col lg="4" md="6" sm="12" className="mb-4" key={index}>
+                <Col lg="4" md="6" sm="12" className="service_box" key={index}>
                     <ServiceCard item={item} />
                 </Col>
             ))}
-        </>
+        </div>
     );
 };
 
