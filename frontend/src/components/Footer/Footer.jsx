@@ -62,7 +62,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <Container>
-                <Row>
+                <Row className="footer_container">
                     <Col lg="6">
                         <div className="logo__footer">
                             <img src={logoLopama} alt="" />
