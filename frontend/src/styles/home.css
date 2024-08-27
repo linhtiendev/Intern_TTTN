@@ -345,3 +345,24 @@
         font-size: 12px;
     } 
  }
+
+ @media only screen and (max-width: 380px) {
+    /* blog */
+    .blog__card-container {
+        gap: 20px;
+    }
+    .blog__card-container .col-lg-4 {
+        width: 370px;
+        height: 470px;
+    } 
+    .blog__card-img img {
+        width: 304px;
+        height: 302px;
+    }
+    .blog__card-title {
+        font-size: 15px;
+    }
+    .blog__card-subtitle {
+        font-size: 11px;
+    } 
+ }
