@@ -159,3 +159,33 @@
         height: 20px;
     }
  }
+
+   @media only screen and (max-width: 380px) {
+    .list__logo-content {
+        gap: 0.6rem !important;
+    }
+    .list__logo-google {
+        width: 55.53px;
+        height: 11.37px;
+    }
+
+    .list__logo-slack {
+        width: 45px;
+        height: 17px;
+    }
+
+    .list__logo-discord {
+        width: 59px;
+        height: 17px;
+    }
+
+    .list__logo-riotinto {
+        width: 65px;
+        height: 12px;
+    }
+
+    .list__logo-heroku {
+        width: 65px;
+        height: 19px;
+    }
+ }

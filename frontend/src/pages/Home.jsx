@@ -43,7 +43,7 @@ const Home = () => {
                                     marketing and promotions.
                                 </p>
                                 <div className="hero__subtitle-box">
-                                    <div className="d-flex gap-5">
+                                    <div className="d-flex gap-4">
                                         <span>
                                             <Button className="btn primary__btn subtitle_btn-box">
                                                 <Link to="/">Get Started</Link>

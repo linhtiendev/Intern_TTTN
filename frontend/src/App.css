@@ -4,6 +4,7 @@
 :root {
   --primary-color: #F67102;
   --secondary-color: #F67102;
+  --hover-color: #ff9137;
   --heading-color: #635F85;
   --text-color: #635F85;
   --font-name: "Montserrat", sans-serif;
@@ -47,7 +48,11 @@ ul {
   border-radius: 50px !important;
   padding: 0.9rem 2rem !important;
 }
-
+.primary__btn:hover {
+  background: var(--hover-color) !important;
+  box-shadow: 2px 2px 1px 1px #d9cfcb;
+  transition: 0.7s;
+}
 .primary__btn a {
   font-size: 1.1rem;
   text-decoration: none;
@@ -55,25 +60,32 @@ ul {
 }
 .primary__btn a:hover {
   color: inherit;
+  transition: 0.7s;
 }
+
 .secondary__btn {
   background: transparent !important;
-  color: #0b2727 !important;
-  /* border: none !important; */
   font-weight: 500 !important;
-  padding: 0.9rem 2rem !important;
-  border: 2px solid #E7E7E7 !important;
+  padding: 0.9rem 2.5rem !important;
+  border: 1px solid #E7E7E7 !important;
   border-radius: 50px !important;
+  transition: background-color 0.7s, border-color 0.7s;
 }
-
+.secondary__btn:hover {
+  background: var(--hover-color) !important;
+  border: 2px solid var(--hover-color) !important;
+  transition: 0.7s;
+  box-shadow: 2px 2px 1px 1px #d9cfcb;
+}
 .secondary__btn a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.1rem;
   color: var(--primary-color);
+  transition: #fff 0.7s !important;
 }
-
-.secondary__btn a:hover {
-  color: inherit;
+.secondary__btn:hover a {
+  color: #fff !important;
+  transition: 0.7s;
 }
 
 
@@ -128,8 +140,11 @@ ul {
   .secondary__btn a {
     font-size: 1rem;
   }
+  .secondary__btn {
+    padding: 0.6rem 1.9rem !important;
+  }
+
   .primary__btn,
-  .secondary__btn,
   .btn-dark {
     padding: 0.6rem 1.4rem !important;
   }
@@ -156,8 +171,12 @@ ul {
   .secondary__btn a {
     font-size: 0.9rem;
   }
+
+  .secondary__btn {
+    padding: 0.5rem 1.7rem !important;
+  }
+
   .primary__btn,
-  .secondary__btn,
   .btn-dark {
     padding: 0.5rem 1.3rem !important;
   }
@@ -171,14 +190,12 @@ ul {
     line-height: 36px;
     font-size: 35px;
   }
-  .primary__btn a,
-  .secondary__btn a {
-    font-size: 0.7rem;
+  .secondary__btn {
+    padding: 0.45rem 1.3rem !important;
   }
   .primary__btn,
-  .secondary__btn,
   .btn-dark {
-    padding: 0.2rem 0.9rem !important;
+    padding: 0.4rem 0.9rem 0.5rem 0.9rem !important;
   }
   
 }
@@ -195,13 +212,26 @@ ul {
   .section__subtitle {
     font-size: 12px;
   }
-  .primary__btn a,
-  .secondary__btn a {
-    font-size: 0.7rem;
+  .secondary__btn {
+    padding: 0.4rem 1.2rem !important;
   }
   .primary__btn,
-  .secondary__btn,
   .btn-dark {
-    padding: 0.2rem 0.9rem !important;
+    padding: 0.3rem 0.8rem 0.4rem 0.8rem !important;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 0.8rem;
+  }
+  .secondary__btn {
+    /* padding: 0.3rem 1rem !important; */
+    padding: 0.2rem 1rem 0.4rem 1rem !important;
+  }
+  .primary__btn,
+  .btn-dark {
+    padding: 0.2rem 0.7rem 0.4rem 0.7rem !important;
   }
 }

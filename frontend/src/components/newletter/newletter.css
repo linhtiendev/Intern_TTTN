@@ -24,7 +24,6 @@
 .newsletter__input input {
     border: none;
     font-size: 1rem;
-    /* color: var(--heading-color); */
     padding-left: 19px;
 }
 
@@ -42,6 +41,10 @@
     color: #fff !important;
     font-size: 1.1rem !important;
     border-radius: 26.5px !important;
+}
+.newsletter__btn:hover {
+    background: var(--hover-color) !important;
+    box-shadow: 2px 2px 1px 1px #d9cfcb;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -124,5 +127,20 @@
     .newsletter__btn {
         padding: 8px 14px !important;
         font-size: 0.8rem !important;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .newletter__section {
+        padding: 10px 10px;
+    }
+    .newsletter__input {
+        width: 75%;
+        margin-top: 5px;
+    }
+
+    .newsletter__btn {
+        padding: 7px 13px !important;
+        font-size: 0.7rem !important;
     }
 }

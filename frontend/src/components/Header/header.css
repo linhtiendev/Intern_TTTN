@@ -36,10 +36,13 @@
 
 .nav__item a:hover {
   color: var(--primary-color);
+  transition: 0.5s;
 }
 
 .nav__item a:hover::after {
   width: 50%; 
+  transition: 0.5s;
+
 }
 
 .mobile__menu {

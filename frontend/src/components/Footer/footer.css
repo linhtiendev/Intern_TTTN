@@ -48,8 +48,21 @@
     font-size: 1rem;
 }
 
+ @media only screen and (max-width: 992px) {
+    .footer {
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
  @media only screen and (max-width: 576px) {
+    .footer {
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
     .footer_container {
-       padding: 30px;
+        gap: 20px;
+        padding: 30px;
     }
 }
