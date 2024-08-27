@@ -99,3 +99,63 @@
         height: 22px;
     }
  }
+
+ @media only screen and (max-width: 576px) {
+    .list__logo-content {
+        gap: 0.8rem !important;
+    }
+    .list__logo-google {
+        width: 67.53px;
+        height: 14.37px;
+    }
+
+    .list__logo-slack {
+        width: 58px;
+        height: 19px;
+    }
+
+    .list__logo-discord {
+        width: 72px;
+        height: 21px;
+    }
+
+    .list__logo-riotinto {
+        width: 78px;
+        height: 14px;
+    }
+
+    .list__logo-heroku {
+        width: 78px;
+        height: 21px;
+    }
+ }
+
+  @media only screen and (max-width: 450px) {
+    .list__logo-content {
+        gap: 0.7rem !important;
+    }
+    .list__logo-google {
+        width: 60.53px;
+        height: 13.37px;
+    }
+
+    .list__logo-slack {
+        width: 50px;
+        height: 18px;
+    }
+
+    .list__logo-discord {
+        width: 64px;
+        height: 20px;
+    }
+
+    .list__logo-riotinto {
+        width: 70px;
+        height: 13px;
+    }
+
+    .list__logo-heroku {
+        width: 70px;
+        height: 20px;
+    }
+ }

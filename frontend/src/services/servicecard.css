@@ -35,6 +35,9 @@
     font-size: 0.9rem;
     color: var(--text-color);
 }
+.section__subtitle {
+    padding: 0 40px;
+}
 
 @media only screen and (max-width: 1400px){
     .service__item{

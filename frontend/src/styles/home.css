@@ -320,6 +320,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+    /* -- hero -- */
+    .hero__content-img img {
+        margin-left: 0px;
+    }
+    /* -- hero -- */
     .subtitle_btn-box {
         margin-top: 15px;
         padding: 7px 15px !important;

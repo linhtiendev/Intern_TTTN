@@ -13,7 +13,10 @@ const ServiceCard = ({ item }) => {
                 </div>
                 <h5>{title}</h5>
                 {/* <p>{desc}</p> */}
-                <p dangerouslySetInnerHTML={{ __html: desc }} />
+                <p
+                    className="section__subtitle"
+                    dangerouslySetInnerHTML={{ __html: desc }}
+                />
             </div>
         </>
     );
