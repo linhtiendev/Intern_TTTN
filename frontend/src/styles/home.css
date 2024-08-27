@@ -333,6 +333,13 @@
 
  @media only screen and (max-width: 576px) {
     /* blog */
+    .blog__card-container {
+        gap: 25px;
+    }
+    .blog__card-container .col-lg-4 {
+        width: 370px;
+        height: 470px;
+    } 
     .blog__card-img img {
         width: 334px;
         height: 312px;
@@ -352,8 +359,8 @@
         gap: 20px;
     }
     .blog__card-container .col-lg-4 {
-        width: 370px;
-        height: 470px;
+        width: 360px;
+        height: 460px;
     } 
     .blog__card-img img {
         width: 304px;
